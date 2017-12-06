@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "/Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 2,
+                        "startOffset": 53,
+                        "endColumn": 44,
+                        "endOffset": 95
+                    }
+                }
+            }
+        ]
+    }
+]

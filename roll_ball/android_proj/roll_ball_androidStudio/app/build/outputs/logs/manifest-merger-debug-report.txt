@@ -1,0 +1,89 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:2:1-16:12
+	package
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:2:70-110
+		INJECTED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:2:159-184
+		INJECTED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:2:185-208
+		INJECTED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:2:209-249
+	android:theme
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:2:111-158
+supports-screens
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:3:3-163
+	android:largeScreens
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:3:78-105
+	android:smallScreens
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:3:21-48
+	android:normalScreens
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:3:49-77
+	android:xlargeScreens
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:3:106-134
+	android:anyDensity
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:3:135-160
+application
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:4:3-13:17
+	android:label
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:4:50-82
+	android:debuggable
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:4:83-109
+	android:icon
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:4:16-49
+activity#com.anansimobile.test.rollball.UnityPlayerNativeActivity
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:5:5-12:16
+	android:screenOrientation
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:5:48-84
+	android:label
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:5:15-47
+	android:launchMode
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:5:85-116
+	android:configChanges
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:5:117-274
+	android:name
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:5:275-346
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:6:7-9:23
+action#android.intent.action.MAIN
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:7:9-61
+	android:name
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:7:17-58
+category#android.intent.category.LAUNCHER
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:8:9-69
+	android:name
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:8:19-66
+meta-data#unityplayer.UnityActivity
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:10:7-82
+	android:value
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:10:59-79
+	android:name
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:10:18-58
+meta-data#unityplayer.ForwardNativeEventsToDalvik
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:11:7-97
+	android:value
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:11:73-94
+	android:name
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:11:18-72
+uses-sdk
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:14:3-72
+	android:targetSdkVersion
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:14:40-69
+		INJECTED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:14:13-39
+		INJECTED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:15:3-52
+	android:glEsVersion
+		ADDED from /Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/src/main/AndroidManifest.xml:15:17-49

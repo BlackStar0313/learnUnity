@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/libs/unity-classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cbedb5de1a90bd47acbf7e666949f424882e9414">
+        <dex dex="/Users/zhiweiliu/work/unity/tes_roll_ball/roll_ball/android_proj/roll_ball_androidStudio/app/build/intermediates/pre-dexed/debug/unity-classes_4d1e164b30a0ca80990bf3e2d1daea6d381e6d0f.jar" />
+    </item>
+
+</items>
