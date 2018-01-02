@@ -24,7 +24,7 @@ public class player : moveingObj {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	private void Update () {
 		if (!GameManager.getInstance().IsPlayerTurn()) return ;
 
 		int horizontal = 0;

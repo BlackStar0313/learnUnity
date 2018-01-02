@@ -5,8 +5,8 @@ using UnityEngine;
 public abstract class moveingObj : MonoBehaviour {
 
 	public float mMoveingTime = .1f ; 
-	public BoxCollider2D mBoxCollider ; 
-	public Rigidbody2D mRb2d ; 
+	private BoxCollider2D mBoxCollider ; 
+	private Rigidbody2D mRb2d ; 
 	private float inverseMovingTime ; 
 	public LayerMask blockingLayer; 
 
@@ -16,7 +16,7 @@ public abstract class moveingObj : MonoBehaviour {
 		mBoxCollider = GetComponent<BoxCollider2D>() ;
 		mRb2d = GetComponent<Rigidbody2D>() ; 
 
-		inverseMovingTime = 1/mMoveingTime ; 
+		inverseMovingTime = 1f/mMoveingTime ; 
 	}
 
 	protected bool Move(int xDir, int yDir ,out RaycastHit2D hit) {
@@ -36,7 +36,7 @@ public abstract class moveingObj : MonoBehaviour {
 
 	protected IEnumerator SmoothMovement(Vector3 end) {
 		float dist = (transform.position - end).sqrMagnitude;
-		if (dist > float.Epsilon) {
+		while (dist > float.Epsilon) {
 			Vector3 newPos = Vector3.MoveTowards(mRb2d.position, end , inverseMovingTime * Time.deltaTime);
 			mRb2d.MovePosition(newPos);
 			dist = (transform.position - end).sqrMagnitude;

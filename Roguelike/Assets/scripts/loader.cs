@@ -3,8 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class loader : MonoBehaviour {
+	// void Awake()
+	// {
+	// 	GameManager.getInstance().Init();
+
+	// }
+
+	public GameObject mGameManager = null ;
+	
+
 	void Awake()
 	{
-		GameManager.getInstance().Init();
+		if (GameManager.instance == null) {
+			Instantiate(mGameManager);
+		}
 	}
+
 }
