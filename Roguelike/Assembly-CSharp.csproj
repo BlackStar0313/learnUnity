@@ -52,6 +52,7 @@
      <Compile Include="Assets\scripts\GameManager.cs" />
      <Compile Include="Assets\scripts\loader.cs" />
      <Compile Include="Assets\scripts\moveingObj.cs" />
+     <Compile Include="Assets\scripts\player.cs" />
      <Compile Include="Assets\scripts\wall.cs" />
      <None Include="Assets\TutorialInfo\Fonts\LICENSE.txt" />
      <None Include="Assets\Fonts\OFL.txt" />

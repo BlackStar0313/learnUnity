@@ -8,6 +8,19 @@ public class GameManager : MonoBehaviour {
 	private BroadManager mBroadManager;
 	private int curLevel = 3 ; 
 	// Use this for initialization
+	[HideInInspector] private int mPlayerFoodNum = 100 ;
+	[HideInInspector] private bool mIsPlayerTurn = true ; 
+
+	public static GameManager getInstance() {
+		if (!GameManager.instance) {
+			Instantiate(GameManager.instance);
+		}
+		return GameManager.instance;
+	}
+
+	public void Init() {
+
+	}
 
 	void Awake()
 	{
@@ -23,4 +36,14 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public void GameOver() {
+		
+	}
+
+	public int GetPlayerFoodNum() { return this.mPlayerFoodNum; }
+	public void SetPlayerFoodNum(int v ) { this.mPlayerFoodNum = v ; }
+
+	public bool IsPlayerTurn() { return this.mIsPlayerTurn; }
+	public void SetIsPlayerTurn(bool v ) { this.mIsPlayerTurn = v ; }
 }
