@@ -2,20 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class player : moveingObj {
 	public float mRestartLevelDelay = 1f ; 
 	public int mPointsPreFood = 10 ; 
 	public int mPointsPreSoda = 20 ; 
 	public int mWallDamage = 1 ; 
+	public Text foodText ;
 
 	private Animator mAnimator ; 
 	private int mFoodsNum ; 
+
+	public AudioClip moveSound1; 
+	public AudioClip moveSound2;
+	public AudioClip eatSound1;
+	public AudioClip eatSound2;
+	public AudioClip drinkSound1;
+	public AudioClip drinkSound2;
+	public AudioClip gameOverSound;
 
 	protected override void Start () {
 		mAnimator = GetComponent<Animator>();
 		mFoodsNum = GameManager.getInstance().GetPlayerFoodNum();
 		base.Start();
+
+		foodText.text = "Food : " + mFoodsNum;
 	}
 
 	private void OnDisable()
@@ -50,11 +62,12 @@ public class player : moveingObj {
 
 	protected override void AttemptMove <T> (int xDir , int yDir)  {
 		mFoodsNum--;
+		foodText.text = "Food : " + mFoodsNum;
 		base.AttemptMove <T> (xDir , yDir);
 
 		RaycastHit2D hit ; 
 		if (Move(xDir, yDir,out hit)) {
-
+			SoundsManager.instance.RandomiSfx(moveSound1, moveSound2);
 		} 
 
 		checkIfGameOver();
@@ -63,6 +76,8 @@ public class player : moveingObj {
 
 	private void checkIfGameOver() {
 		if (mFoodsNum <= 0) {
+			SoundsManager.instance.PlaySingle(gameOverSound);
+			SoundsManager.instance.musicSource.Stop();
 			GameManager.getInstance().GameOver();
 		}
 	}
@@ -82,6 +97,8 @@ public class player : moveingObj {
 			{
 				mFoodsNum += mPointsPreFood;
 				other.gameObject.SetActive(false);
+				foodText.text = "add Food + " + mPointsPreFood;
+				SoundsManager.instance.RandomiSfx(eatSound1, eatSound2);
 				break;
 			}
 
@@ -89,6 +106,8 @@ public class player : moveingObj {
 			{
 				mFoodsNum += mPointsPreSoda;
 				other.gameObject.SetActive(false);
+				foodText.text = "add Food + " + mPointsPreSoda;
+				SoundsManager.instance.RandomiSfx(drinkSound1, drinkSound2);
 				break;
 			}
 			default:
@@ -103,6 +122,7 @@ public class player : moveingObj {
 	public void LoseFood(int loss) {
 		mAnimator.SetTrigger("player_demaged");
 		mFoodsNum -= loss; 
+		foodText.text = "loss Food - " + loss;
 		checkIfGameOver();
 	}
 }

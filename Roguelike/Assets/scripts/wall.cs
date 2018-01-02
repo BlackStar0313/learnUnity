@@ -7,6 +7,8 @@ public class wall : MonoBehaviour {
 
 	private SpriteRenderer mSpriteRender;
 	private int hp = 3 ;
+	public AudioClip chopSoun1;
+	public AudioClip chopSoun2;
 
 	void Awake()
 	{
@@ -17,6 +19,7 @@ public class wall : MonoBehaviour {
 		mSpriteRender.sprite = mDamageSprite;
 
 		hp -= loss;
+		SoundsManager.instance.RandomiSfx(chopSoun1 , chopSoun2);
 		if (hp <= 0 ) {
 			gameObject.SetActive(false);
 		}

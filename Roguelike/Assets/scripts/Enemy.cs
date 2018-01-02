@@ -8,6 +8,8 @@ public class Enemy : moveingObj {
 	private Animator mAnimator;
 	private Transform mTarget ; 
 	private bool mIsSkipMove = false ;
+	public AudioClip hitSound1 ;
+	public AudioClip hitSound2 ;
 
 	// Use this for initialization
 	protected override void Start () {
@@ -45,5 +47,6 @@ public class Enemy : moveingObj {
 		player hitplayer = component as player ; 
 		hitplayer.LoseFood(mPlayerDamage);
 		this.mAnimator.SetTrigger("enemy_hit");
+		SoundsManager.instance.RandomiSfx(hitSound1, hitSound2);
 	}
 }
