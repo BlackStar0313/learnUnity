@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	[HideInInspector] private int mPlayerFoodNum = 100 ;
 	[HideInInspector] private bool mIsPlayerTurn = true ; 
+	private List<Enemy> mEnemyList = new List<Enemy>();
 
 	public static GameManager getInstance() {
 		if (!GameManager.instance) {
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void GameOver() {
-		
+
 	}
 
 	public int GetPlayerFoodNum() { return this.mPlayerFoodNum; }
@@ -46,4 +47,8 @@ public class GameManager : MonoBehaviour {
 
 	public bool IsPlayerTurn() { return this.mIsPlayerTurn; }
 	public void SetIsPlayerTurn(bool v ) { this.mIsPlayerTurn = v ; }
+
+	public void AddEnemyToList(Enemy e ) {
+		this.mEnemyList.Add(e);
+	}
 }
