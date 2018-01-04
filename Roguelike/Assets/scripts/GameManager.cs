@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
 		this.mBroadManager = GetComponent<BroadManager>();
 		this.InitGame();
+
+		// this.testInit();
 	}
 
 	void OnLevelWasLoaded(int index) {
@@ -100,4 +102,28 @@ public class GameManager : MonoBehaviour {
 	public void AddEnemyToList(Enemy e ) {
 		this.mEnemyList.Add(e);
 	}
+
+
+	void testInit() {
+		Debug.Log("~~~~ init 11111 ");
+		StartCoroutine(coroutineA());
+		Debug.Log("~~~~ init  222 ");
+	}
+
+	IEnumerator coroutineA()
+    {
+        // wait for 1 second
+        Debug.Log("coroutineA created");
+        yield return new WaitForSeconds(1.0f);
+		Debug.Log("coroutineA  coroutineb created");
+        yield return StartCoroutine(coroutineB());
+        Debug.Log("coroutineA running again");
+    }
+
+    IEnumerator coroutineB()
+    {
+        Debug.Log("coroutineB created");
+        yield return new WaitForSeconds(2.5f);
+        Debug.Log("coroutineB enables coroutineA to run");
+    }
 }

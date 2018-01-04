@@ -116,7 +116,7 @@ public class player : moveingObj {
 	}
 
 	private void Restart() {
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene(0 );
 	}
 
 	public void LoseFood(int loss) {
